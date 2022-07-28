@@ -450,6 +450,13 @@ const result = document.getElementById('result')
 result.style.display = "none"
 const replay = document.getElementById('replay')
 
+// add audio file 
+
+  var audio = new Audio('HesaPirate.mp3')
+
+    
+  
+
 // switch page display when button is clicked
 
 
@@ -496,6 +503,8 @@ const countDown = () => {
 let getFellows = []
 
 const loadData = () => {
+//     play audio
+    audio.play();
 
     // let i = 0
     while (getFellows.length !== 10) {
