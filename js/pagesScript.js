@@ -484,7 +484,7 @@ let userAns = undefined
 
 // create Timer
 const countDown = () => {
-    if (timer === 25) {
+    if (timer === 20) {
         // clearInterval(interval);
         endGame()
     } else {
