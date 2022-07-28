@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="whats_my_name.png" type="image/x-icon" />
+    <title>How Many Fellows Do You Know?</title>
+  </head>
+  <body>
+    <main>
+      <!-- Landing page -->
+      <section id="landing" class="center_container">
+        <img src="TiideLab_LOGO.png" alt="" />
+        <img id="logo" src="whats_my_name.png" alt="" />
+        <h1>
+          A Game For TIIDELab Fellows <br />
+          by
+          <br />
+          Joy Offiong <br />
+          Olamilekan Daniel
+        </h1>
+
+        <button id="landing_play">Play</button>
+      </section>
+      <!-- Rules page -->
+      <section id="rules" class="center_container">
+        <div class="texts">
+          <h2>♦ Rules ♦</h2>
+          <p>🎮 10 fellows are generated at random.</p>
+          <p>🎮 You have 3 options, only one is correct.</p>
+          <p>🎮 You have 20 seconds to play each round.</p>
+          <h3 class="center">Goodluck!</h3>
+        </div>
+
+        <button id="game_start">Start</button>
+      </section>
+      <!-- Game play page -->
+      <section id="play" class="center_container">
+        <p class="imageCount"><span id="imageNum">1</span>/10</p>
+        <p class="time"><span id="timer">0</span> Secs</p>
+        <div id="gameplay_interface">
+          <img src="ff_handshake.png" alt="" id="display" />
+          <!-- <img src="images/peep-1.png" alt=""> -->
+
+          <div class="answer_options">
+            <button id="option_one" class="option">Option One</button>
+            <button id="option_two" class="option">Option Two</button>
+            <button id="option_three" class="option">Option Three</button>
+          </div>
+
+          <button id="next">next</button>
+        </div>
+      </section>
+      <!-- results page -->
+      <section id="result" class="center_container">
+        <button id="replay">Replay</button>
+        <h1 class="medal">🎈</h1>
+        <p class="score"><span id="total">4</span>/10</p>
+        <p id="remark">
+          🚶🏽 You don't normally come to class, I will tell Mr Shams 🚶🏽‍♂️
+        </p>
+      </section>
+    </main>
+
+    <!-- JS File import -->
+    <script src="js/pagesScript.js"></script>
+    <script src="js/alert.js"></script>
+  </body>
+</html>

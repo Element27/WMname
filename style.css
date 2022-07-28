@@ -1,0 +1,233 @@
+/* regular font import */
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;600;700&display=swap');
+/* italic font import */
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Ibarra Real Nova", 'Times New Roman', Times, serif;
+    font-style: italic;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 10px;
+}
+
+main {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.center_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#landing {
+    /* background-color: #e8f804; */
+     
+    background-color: #EFDECD;
+}
+
+#landing #logo {
+    margin-top: 50px;
+    max-width: 300px;
+}
+
+#landing h1 {
+    margin-top: 50px;
+    font-size: 28px;
+    color: #132153;
+    font-weight: 700;
+}
+
+button {
+    margin-top: 3rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: .5rem 3rem;
+    outline: none;
+    border: none;
+    border-radius: 2rem;
+    color: #fff;
+    /* background-color: #00a4ef; */
+    background-color: #970000;
+    box-shadow: 0px 0px 5px #090909;
+    text-shadow: 0 0 5px #121212;
+    transition: .7s all;
+}
+
+.answer_options button {
+    margin-top: 1rem;
+}
+
+button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+/* rules page */
+#rules {
+    /* background-color: #6F4E37; */
+    background-color: #D2B48C;
+    color: #19161d;
+}
+
+#rules .texts {
+    background-color: #ffffff5f;
+    padding: 100px 50px;
+    border-radius: 20px;
+}
+
+#rules h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#rules h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#rules p {
+    font-size: 24px;
+    line-height: 2rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* GamePlay*/
+#play {
+    background-color: #EFDECD;
+    width: 100%;
+    /*  */
+    position: relative;
+}
+
+#play .option {
+    background-color: #9b3131;
+    font-style:normal;
+}
+
+#play .answer_options .disabled {
+    pointer-events: none;
+}
+#play .answer_options .active {
+    background: #e91e3a;
+}
+
+.imageCount {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 18px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px #121212;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.time {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 18px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px #121212;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+#play img {
+    max-width: 500px;
+    max-height: 300px;
+}
+
+#play .answer_options button {
+    width: 100%;
+}
+
+/* result */
+#result {
+    background-color: #EFDECD;
+
+}
+
+#result button{
+    margin-bottom: 20px;
+}
+
+
+
+#result h1 {
+    font-size: 200px;
+}
+
+#result .score {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#result #remark {
+    font-size: 28px;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+@media (max-width: 786px) {
+    #play {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #landing #logo {
+        width: 70%;
+    }
+
+    .center_container {
+        padding: 10px;
+    }
+
+    #landing h1 {
+        font-size: 24px;
+    }
+
+    #rules .texts {
+        text-align: left;
+    }
+
+    #rules p {
+        font-size: 18px;
+        line-height: normal;
+        margin-bottom: 10px;
+        /* text-align: center; */
+    }
+
+    #rule h2 {
+        text-align: left;
+    }
+
+    .center {
+        text-align: left;
+    }
+}
