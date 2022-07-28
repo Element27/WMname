@@ -503,7 +503,7 @@ const countDown = () => {
 let getFellows = []
 
 const loadData = () => {
-//     play audio
+
     
     // let i = 0
     while (getFellows.length !== 10) {
@@ -534,7 +534,9 @@ LandingPlayBtn.addEventListener('click', () => {
     rules.style.display = "flex"
     play.style.display = "none"
     result.style.display = "none"
+    //     play audio
     audio.play();
+    audio.volume = 0.4;
 
 })
 
