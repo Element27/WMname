@@ -213,6 +213,7 @@ button:hover {
 
     .center_container {
         padding: 10px;
+        height: fit-content;
     }
 
     #landing h1 {
