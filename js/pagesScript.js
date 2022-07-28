@@ -504,8 +504,7 @@ let getFellows = []
 
 const loadData = () => {
 //     play audio
-    audio.play();
-
+    
     // let i = 0
     while (getFellows.length !== 10) {
         let rand = Math.floor(Math.random() * fellows.length)
@@ -535,6 +534,8 @@ LandingPlayBtn.addEventListener('click', () => {
     rules.style.display = "flex"
     play.style.display = "none"
     result.style.display = "none"
+    audio.play();
+
 })
 
 // What happens when the play button on the rules section is clicked
@@ -626,5 +627,6 @@ const endGame = () => {
 // reload button
 const reloadBtn = document.getElementById('replay')
 reloadBtn.addEventListener('click', () => {
+    audio.load()
     location.reload()
 })
