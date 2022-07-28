@@ -55,6 +55,13 @@ main {
     font-weight: 700;
 }
 
+#landing h3{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #132153;
+}
+
 button {
     margin-top: 3rem;
     font-size: 1.6rem;
